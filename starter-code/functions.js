@@ -43,7 +43,6 @@ function numberOfArguments(){
 }
 console.log("Q5: numberOfArguments('one','two','three') has " + numberOfArguments('one','two','three') + " arguments.")
 
-
 // Question 6
 function reverseString(str){
   q6 = ""
@@ -54,12 +53,15 @@ function reverseString(str){
 };
 console.log("Q6: The reverse of 'marsha brady' is " + reverseString('marsha brady'))
 
-
 // Question 7
 function findLongestWord(arr7) {
-  
+  longest = arr7[0];
+  arr7.forEach(function(v){
+    if (v.length > longest.length) {longest = v}
+  })
+  return longest;
 }
-
+console.log("Q7: The longest word in ['Eschew','obfuscation','!'] is " + findLongestWord(['Eschew','obfuscation','!']))
 
 // Question 8
 function filterLongWords () {
