@@ -64,9 +64,14 @@ function findLongestWord(arr7) {
 console.log("Q7: The longest word in ['Eschew','obfuscation','!'] is " + findLongestWord(['Eschew','obfuscation','!']))
 
 // Question 8
-function filterLongWords () {
-  
+function filterLongWords(arrayOfWords,i) {
+  arr8 = []
+  arrayOfWords.forEach(function(v){
+    if (v.length>max){arr8.push(v)}
+  })
+  return arr8;
 }
+console.log("Q8: The words longer than 4 in ['catch','a','falling','star'] are " + filterLongWords(['catch','a','falling','star'],4))
 
 
 // Bonus 1
