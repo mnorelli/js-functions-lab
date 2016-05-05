@@ -87,16 +87,16 @@ console.log("Bonus1:  The result of 'live'.reverseString() is "+'live'.reverseSt
 
 // Bonus 2
 function charactersOccurencesCount(str) {
-  bonus2 = {}
-  strArray = str.split('')
-  for (key in strArray) {
-    ltr = strArray[key]
-    if (bonus2.hasOwnProperty(ltr)) {
-      bonus2[ltr] += 1
+  bonus2 = {};                        // set up the object to hold the answers
+  strArray = str.split('');           // to analyze its contents, we need to make the string argument into an array
+  for (var key in strArray) {         // so we can iterate over it
+    ltr = strArray[key];              // Let's set the first member of the the array (i.e., first letter) as a variable
+    if (bonus2.hasOwnProperty(ltr)) { // Check to see if our result array already has a member matching or first letter
+      bonus2[ltr] += 1;               // If it is found, increment the value (the number pair) for the key (the letter in the string)
     } else {
-      bonus2[ltr] = 1
+      bonus2[ltr] = 1;                // If it doesn't yet exist, give the key a value of 1
     }
   }
-  return bonus2
+  return bonus2;
 }
-console.log("Bonus2: Here are the occurences for 'occurences': ");console.log(charactersOccurencesCount('occurences'))
+console.log("Bonus2: Here are the occurences for 'occurences': ");console.log(charactersOccurencesCount('occurences'));
