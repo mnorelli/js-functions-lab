@@ -1,45 +1,62 @@
 // Question 1
-function maxOfTwoNumbers() {
-
+function maxOfTwoNumbers(a,b) {
+  (a > b)?  x = a :  x = b;
+  return x
 }
+console.log("Q1: Max of 8 and 15 is " + maxOfTwoNumbers(8,15))
 
 // Question 2
-function maxOfThree() {
-
+function maxOfThree(a,b,c) {
+    x = a;
+    (x > b)?  x = a :  x = b;
+    (x > c)?  x = x :  x = c;
+    return x
 }
+console.log("Q2: Max of 8, 10, and 9 is " + maxOfThree(8,10,9))
 
 // Question 3
-function isCharacterAVowel() {
-
+function isCharacterAVowel(c) {
+    return ("aeiou".indexOf(c.toLowerCase())===0)
 }
+console.log("Q3: 'X' is a vowel? " + isCharacterAVowel('X'))
+console.log("Q3: 'A' is a vowel? " + isCharacterAVowel('A'))
 
 // Question 4
-function sumArray() {
- 
+function sumArray(arr) {
+    q4sum = 0
+    arr.forEach(function(d){q4sum+=d})
+    return q4sum
 }
-
+console.log("Q4: sumArray([2,3,9]) = " + sumArray([2,3,9]))
 
 // Question 4
-function multiplyArray() {
-
+function multiplyArray(arr) {
+    q4product = 1
+    arr.forEach(function(d){q4product*=d})
+    return q4product
 }
-
+console.log("Q4: multiplyArray([2,3,9]) = " + multiplyArray([2,3,9]))
 
 // Question 5
-var numberOfArguments = function(){
-  
+function numberOfArguments(){
+  return arguments.length
 }
-
+console.log("Q5: numberOfArguments('one','two','three') has " + numberOfArguments('one','two','three') + " arguments.")
 
 
 // Question 6
-var reverseString = function (){
-  
+function reverseString(str){
+  q6 = ""
+  for (i=str.length-1;i>=0;i--){
+    q6 = q6 + str[i]
+  }
+  return q6
 };
+console.log("Q6: The reverse of 'marsha brady' is " + reverseString('marsha brady'))
 
 
 // Question 7
-function findLongestWord () {
+function findLongestWord(arr7) {
   
 }
 
