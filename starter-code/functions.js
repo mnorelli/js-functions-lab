@@ -67,7 +67,7 @@ console.log("Q7: The longest word in ['Eschew','obfuscation','!'] is " + findLon
 function filterLongWords(arrayOfWords,i) {
   arr8 = []
   arrayOfWords.forEach(function(v){
-    if (v.length>max){arr8.push(v)}
+    if (v.length>i){arr8.push(v)}
   })
   return arr8;
 }
@@ -76,7 +76,14 @@ console.log("Q8: The words longer than 4 in ['catch','a','falling','star'] are "
 
 // Bonus 1
 // (hint: `prototype`)
-
+String.prototype.reverseString = function(){
+  bonus1 = ""
+  for (i=this.length-1;i>=0;i--){
+    bonus1 = bonus1 + this[i]
+  }
+  return bonus1
+};
+console.log("Bonus1:  The result of 'live'.reverseString() is "+'live'.reverseString())
 
 // Bonus 2
 function charactersOccurencesCount() {
