@@ -86,7 +86,17 @@ String.prototype.reverseString = function(){
 console.log("Bonus1:  The result of 'live'.reverseString() is "+'live'.reverseString())
 
 // Bonus 2
-function charactersOccurencesCount() {
-  
+function charactersOccurencesCount(str) {
+  bonus2 = {}
+  strArray = str.split('')
+  for (key in strArray) {
+    ltr = strArray[key]
+    if (bonus2.hasOwnProperty(ltr)) {
+      bonus2[ltr] += 1
+    } else {
+      bonus2[ltr] = 1
+    }
+  }
+  return bonus2
 }
-
+console.log("Bonus2: Here are the occurences for 'occurences': ");console.log(charactersOccurencesCount('occurences'))
