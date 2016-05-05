@@ -100,3 +100,6 @@ function charactersOccurencesCount(str) {
   return bonus2;
 }
 console.log("Bonus2: Here are the occurences for 'occurences': ");console.log(charactersOccurencesCount('occurences'));
+
+
+//bogus edit, for testing git push without password
